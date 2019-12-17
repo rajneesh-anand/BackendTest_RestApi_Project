@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BackendTestProject" parallel="false" verbose="2">
+    <listeners>
+        <listener class-name="com.rest_api.framework.TestListener" />
+    </listeners>
+    <test name="BlogRestAPITest" preserve-order="true">
+        <groups>
+            <run>
+                <include name="user" />
+                <include name="blog" />
+                <include name="comment" />
+            </run>
+
+        </groups>
+        <packages>
+            <package name="com.rest_api.framework" />
+            <package name="com.rest_api.test" />
+        </packages>
+
+    </test>
+</suite>
