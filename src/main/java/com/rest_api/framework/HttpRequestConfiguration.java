@@ -14,7 +14,7 @@ public class HttpRequestConfiguration {
     // Set the RestAssured base uri for entire test. All the tests will fail in case of invalid url.
     @BeforeSuite(alwaysRun = true)
     public void config(){
-        RestAssured.baseURI="https://jsonplaceholderr.typicode.com";
+        RestAssured.baseURI="https://jsonplaceholder.typicode.com";
     }
 
     //  Fetch the UserID for User {setUsername} from JSON Response.
