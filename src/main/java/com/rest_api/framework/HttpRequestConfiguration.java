@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 
 public class HttpRequestConfiguration {
     // Set the User name for specific user details.
-    public String setUserName = "Samantha";
+    public String setUserName = "Samanthaaaaa";
 
     // Set the RestAssured base uri for entire test. All the tests will fail in case of invalid url.
     @BeforeSuite(alwaysRun = true)
